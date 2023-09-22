@@ -1,0 +1,151 @@
+/* =========================
+    Estilos Globais
+========================= */
+
+/* Estilos para o corpo da página */
+body {
+    background-color: #e73131 !important;
+    color: #fff !important;
+    font-family: 'Gothic A1', sans-serif ;
+    background-image: url('../assets/images/background-texture.jpg');
+    background-size: cover;
+}
+
+/* =========================
+    Fontes Personalizadas
+========================= */
+
+/* Fonte personalizada DiabloFont */
+@font-face {
+    font-family: 'DiabloFont';
+    src: url('../assets/fonts/Diablo Light.ttf') format('truetype');
+}
+
+/* =========================
+    Cabeçalho
+========================= */
+
+/* Estilos para o cabeçalho da página */
+header {
+    background: linear-gradient(to bottom, #111, #000);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 3px solid #8B0000;
+}
+
+/* Estilos para o título no cabeçalho */
+header h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #8B0000;
+}
+
+/* Estilos para a marca e links da navegação */
+.navbar-brand, .nav-link {
+    font-family: 'DiabloFont', sans-serif;
+    text-shadow: 1px 1px 2px #8B0000;
+}
+
+/* =========================
+    Conteúdo Principal
+========================= */
+
+/* Estilos para a área principal da página */
+main {
+    padding: 1rem;
+    background-color: rgba(18, 18, 18, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilos para as seções dentro da área principal */
+section {
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 2px dashed #333;
+}
+
+/* Estilos para o título de cada seção */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+    font-family: 'DiabloFont', sans-serif;  
+}
+
+section h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+    font-family: 'DiabloFont', sans-serif; 
+}
+
+/* Estilos para o parágrafo de cada seção */
+section p {
+    line-height: 1.6;
+}
+
+/* Estilos para imagens dentro das seções */
+section img {
+    max-width: 50em;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* =========================
+    Rodapé
+========================= */
+
+/* Estilos para o rodapé da página */
+footer {
+    background: linear-gradient(to top, #111, #000);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-top: 3px solid #8B0000;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+/* =========================
+    Efeitos e Transições
+========================= */
+
+/* Estilos de transição para links e botões */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Estilos para o estado hover de links e botões */
+a:hover, button:hover {
+    transform: scale(1.05);
+    text-shadow: 2px 2px 4px #8B0000;
+}
+
+/* Estilos para o contador */
+
+#countdown {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'DiabloFont', sans-serif;
+    color: #fff;
+  }
+  
+  #countdown span {
+    margin: 0 10px;
+  }
