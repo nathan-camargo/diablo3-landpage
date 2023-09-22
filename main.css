@@ -18,7 +18,7 @@ body {
 /* Fonte personalizada DiabloFont */
 @font-face {
     font-family: 'DiabloFont';
-    src: url('../assets/fonts/Diablo Light.ttf') format('truetype');
+    src: url('fonts/Diablo\ Light.ttf') format('truetype');
 }
 
 /* =========================
