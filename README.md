@@ -3,6 +3,7 @@
 ## Olá, professor!
 
 Este é o projeto do site de landing page que desenvolvi para a Temporada 29 do Diablo 3. O site foi feito para dar aos fãs um gostinho do que está por vir nesta temporada emocionante.
+https://nathan-camargo.github.io/diablo3-landpage/
 
 ## O que tem no site?
 
