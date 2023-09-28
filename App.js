@@ -75,3 +75,39 @@ const dataFinal = new Date("Sep 30, 2023 21:00:00 GMT-0300").getTime();
   
 // Inicia a contagem regressiva
 mostrarContagemRegressiva(dataFinal);
+
+
+// Aguarda o conteúdo do DOM ser totalmente carregado
+document.addEventListener("DOMContentLoaded", function() {
+  
+    // Seleciona todos os elementos que têm a classe "fade-in"
+    const elements = document.querySelectorAll(".fade-in");
+  
+    // Função para verificar a posição de cada elemento na janela
+    function checkPosition() {
+      
+      // Percorre todos os elementos selecionados
+      for (let i = 0; i < elements.length; i++) {
+        
+        // Armazena o elemento atual em uma variável
+        const element = elements[i];
+        
+        // Obtém a posição do elemento em relação ao topo da janela
+        const positionFromTop = elements[i].getBoundingClientRect().top;
+  
+        // Verifica se o elemento entrou na janela de visualização
+        if (positionFromTop - window.innerHeight <= 0) {
+          
+          // Se sim, adiciona a classe "visible" para disparar a animação
+          element.classList.add('visible');
+        }
+      }
+    }
+  
+    // Adiciona um ouvinte de evento de rolagem para executar a função checkPosition
+    window.addEventListener('scroll', checkPosition);
+    
+    // Executa a função uma vez para verificar a posição inicial dos elementos
+    checkPosition();
+  });
+  
